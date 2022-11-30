@@ -22,7 +22,7 @@ const dlSchema = new mongoose.Schema({
     }
 });
 
-const Dummylogin = mongoose.model('Dummylogins', dlSchema);
+const Dummylogin = mongoose.model('dummylogins', dlSchema);
 
 app.get('/showdb',(req,res)=>{
     Dummylogin.find({},(err,suc)=>{
