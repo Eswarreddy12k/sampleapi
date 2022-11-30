@@ -3,7 +3,7 @@ const app=express()
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/apisample', {useNewUrlParser: true, useUnifiedTopology: true}, (err)=>{
+mongoose.connect('mongodb+srv://eswar:eswarreddy@cluster0.nvkcuqs.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true}, (err)=>{
     if(err)
         console.log('Error connecting to database', err);
     else
